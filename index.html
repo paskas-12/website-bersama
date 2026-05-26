@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gudang Hasil Tani Wanayasa</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80');
+      background-size:cover;
+      background-position:center;
+      height:100vh;
+      color:white;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    header h1{
+      font-size:55px;
+      margin-bottom:20px;
+    }
+
+    header p{
+      font-size:22px;
+      max-width:800px;
+      margin:auto;
+    }
+
+    nav{
+      background:#2d6a4f;
+      padding:15px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav ul{
+      display:flex;
+      justify-content:center;
+      list-style:none;
+      flex-wrap:wrap;
+    }
+
+    nav ul li{
+      margin:10px 20px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#d8f3dc;
+    }
+
+    section{
+      padding:70px 10%;
+      background:white;
+      margin-bottom:10px;
+    }
+
+    section h2{
+      color:#2d6a4f;
+      margin-bottom:20px;
+      font-size:35px;
+    }
+
+    .card-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:20px;
+      margin-top:30px;
+    }
+
+    .card{
+      background:#f1fdf4;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      color:#1b4332;
+      margin-bottom:10px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:20px;
+    }
+
+    table th, table td{
+      border:1px solid #ccc;
+      padding:12px;
+      text-align:left;
+    }
+
+    table th{
+      background:#2d6a4f;
+      color:white;
+    }
+
+    footer{
+      background:#1b4332;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    .hero-btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:15px 35px;
+      background:#52b788;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .hero-btn:hover{
+      background:#40916c;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:38px;
+      }
+
+      header p{
+        font-size:18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div>
+      <h1>Gudang Hasil Tani Wanayasa</h1>
+      <p>
+        Solusi penyimpanan, pengelolaan, dan distribusi hasil pertanian
+        terpercaya untuk meningkatkan kesejahteraan petani Wanayasa.
+      </p>
+
+      <a href="#tentang" class="hero-btn">Lihat Profil Usaha</a>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#visi">Visi & Misi</a></li>
+      <li><a href="#keunggulan">Keunggulan</a></li>
+      <li><a href="#operasional">Operasional</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- TENTANG -->
+  <section id="tentang">
+    <h2>Tentang Usaha</h2>
+
+    <p>
+      Gudang Hasil Tani Wanayasa merupakan usaha di bidang
+      penyimpanan dan distribusi hasil pertanian yang berlokasi di
+      Wanayasa, Purwakarta, Jawa Barat.
+    </p>
+
+    <br>
+
+    <p>
+      Usaha ini hadir sebagai solusi atas keterbatasan fasilitas penyimpanan
+      hasil panen yang selama ini dialami petani lokal. Dengan sistem
+      penyimpanan yang baik dan distribusi yang terorganisir,
+      petani dapat memperoleh harga jual yang lebih stabil dan adil.
+    </p>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>Jenis Usaha</h3>
+        <p>Pergudangan & Distribusi Hasil Pertanian</p>
+      </div>
+
+      <div class="card">
+        <h3>Lokasi</h3>
+        <p>Wanayasa, Purwakarta, Jawa Barat</p>
+      </div>
+
+      <div class="card">
+        <h3>Kapasitas Gudang</h3>
+        <p>± 50 Ton (Tahap Awal)</p>
+      </div>
+
+      <div class="card">
+        <h3>Komoditas</h3>
+        <p>Singkong, Jagung, Ubi, Sayuran, Buah Lokal</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VISI MISI -->
+  <section id="visi">
+    <h2>Visi & Misi</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>Visi</h3>
+        <p>
+          Menjadi pusat penyimpanan dan distribusi hasil pertanian terpercaya
+          yang meningkatkan kesejahteraan petani dan ketahanan pangan
+          kawasan Wanayasa serta Purwakarta pada tahun 2031.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Misi</h3>
+        <ul>
+          <li>Menyediakan fasilitas gudang berstandar.</li>
+          <li>Membangun kemitraan dengan petani.</li>
+          <li>Menerapkan sistem stok berbasis teknologi.</li>
+          <li>Mengembangkan jaringan distribusi luas.</li>
+          <li>Memberdayakan tenaga kerja lokal.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LAYANAN -->
+  <section id="layanan">
+    <h2>Layanan Kami</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>Jasa Penyimpanan</h3>
+        <p>
+          Penyewaan ruang gudang untuk penyimpanan hasil panen petani.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Sortasi & Pengemasan</h3>
+        <p>
+          Pembersihan, pengeringan, dan pengemasan hasil pertanian.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Distribusi</h3>
+        <p>
+          Pengiriman hasil pertanian ke pasar, supermarket, dan industri.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Pembelian Tunai</h3>
+        <p>
+          Pembelian langsung hasil panen petani dengan harga kompetitif.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Konsultasi Pasca Panen</h3>
+        <p>
+          Pendampingan teknis untuk menjaga kualitas hasil panen.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KEUNGGULAN -->
+  <section id="keunggulan">
+    <h2>Keunggulan Kompetitif</h2>
+
+    <table>
+      <tr>
+        <th>Aspek</th>
+        <th>Gudang Hasil Tani Wanayasa</th>
+      </tr>
+
+      <tr>
+        <td>Fasilitas Gudang</td>
+        <td>Bersih, terventilasi, dan berstandar</td>
+      </tr>
+
+      <tr>
+        <td>Harga ke Petani</td>
+        <td>Kompetitif & transparan</td>
+      </tr>
+
+      <tr>
+        <td>Layanan Tambahan</td>
+        <td>Sortasi, pengemasan, distribusi</td>
+      </tr>
+
+      <tr>
+        <td>Teknologi</td>
+        <td>Sistem manajemen stok digital</td>
+      </tr>
+
+      <tr>
+        <td>Jangkauan Pasar</td>
+        <td>Pasar tradisional, supermarket, industri</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- OPERASIONAL -->
+  <section id="operasional">
+    <h2>Rencana Operasional</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>Penerimaan</h3>
+        <p>Penimbangan dan pemeriksaan kualitas hasil panen.</p>
+      </div>
+
+      <div class="card">
+        <h3>Sortasi</h3>
+        <p>Pemilahan berdasarkan kualitas dan kondisi produk.</p>
+      </div>
+
+      <div class="card">
+        <h3>Penyimpanan</h3>
+        <p>Penyimpanan sesuai standar suhu dan kelembapan.</p>
+      </div>
+
+      <div class="card">
+        <h3>Distribusi</h3>
+        <p>Pengiriman hasil tani ke berbagai segmen pasar.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+
+    <p><strong>Alamat:</strong> Wanayasa, Purwakarta, Jawa Barat</p>
+    <p><strong>Email:</strong> gudanghasiltani@gmail.com</p>
+    <p><strong>Telepon:</strong> 0812-XXXX-XXXX</p>
+
+    <br>
+
+    <p>
+      Mari bekerja sama untuk meningkatkan kesejahteraan petani lokal
+      dan membangun sistem distribusi hasil pertanian yang lebih baik.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © 2026 Gudang Hasil Tani Wanayasa | Website Proposal Usaha
+    </p>
+  </footer>
+
+</body>
+</html>
